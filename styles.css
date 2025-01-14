@@ -7,7 +7,7 @@ body {
 
 p {
     line-height: 25px;
-}
+}p
 
 p:hover {
     background-color: #d3d3d3;
@@ -134,7 +134,7 @@ nav .cb {
 header {
     display: flex;
     flex-direction: column;
-    padding-top: 12%;
+    padding-top: 19%;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -148,7 +148,6 @@ header h1 {
 
 header p {
     opacity: 60%;
-    margin-top: 0;
     max-width: 80%
 }
 
