@@ -361,12 +361,8 @@ footer {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    padding: 3% 10% 3% 10%;
+    padding: 3% 10% 3% 15%;
     background-color: rebeccapurple;
-    color: white;
-}
-
-footer p {
     color: white;
 }
 
@@ -489,10 +485,15 @@ footer svg {
         max-width: 1100px;
     }
 
+    footer {
+        padding: 3% 10% 3% 10%;
+        max-width: 100%;
+    }
+
     footer div {
-        width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
     }
 
     footer h2 {
@@ -500,12 +501,12 @@ footer svg {
     }
 
     footer div p {
-        width: 100%;
+        min-width: 18%;
         font-size: 20px; 
         font-weight: 300;
+        padding-left: 3%;
         color: white;
-        border: none;
-        margin-left: 3%;
+
     }
 
     footer div p:hover {
