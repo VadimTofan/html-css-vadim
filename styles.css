@@ -305,15 +305,12 @@ table {
     margin-top: 3%;
 }
 
-thead {
-    width: 20%;
-}
-
 th, td {
     border: 1px solid #ddd;
     text-align: center;
     font-size: 14px;
     border-color: rebeccapurple;
+    width: 20%;
 }
 
 th {
