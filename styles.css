@@ -461,11 +461,14 @@ footer svg {
         flex-direction: row;
     }
 
+    footer h2 {
+        margin-left: 3.2%;
+    }
+
     footer div p {
         width: 100%;
         font-size: 20px; 
         font-weight: 300;
-        text-wrap: nowrap;
         color: white;
         border: none;
         margin-left: 3%;
