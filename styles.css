@@ -306,7 +306,7 @@ table {
 }
 
 thead {
-    min-width: 20%;
+    width: 20%;
 }
 
 th, td {
