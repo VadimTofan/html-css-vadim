@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto", Sans-serif;
+    font-family: "Roboto", "Sans-serif";
     width: 100%;
     margin: 0;
     background-color: #d3d3d3;
@@ -53,6 +53,7 @@ nav {
     z-index: 10000;
     margin-top: 0;
     width: 80%;
+    font-family: "Monserat", "Sans-serif";
 }
 
 nav ul li:hover {
@@ -161,7 +162,8 @@ header h1 {
 }
 
 header p {
-    opacity: 60%;
+    font-size: 25px;
+    opacity: 80%;
     margin-top: 0;
     max-width: 80%
 }
