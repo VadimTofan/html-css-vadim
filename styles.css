@@ -181,9 +181,10 @@ aside div {
 
 aside img {
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
-aside img, p, h2 {
+aside p, h2 {
     max-width: 100%;
     text-align: justify;
 }
@@ -542,10 +543,13 @@ footer svg {
     
     aside img {
         border-radius: 20px 0 0 20px;
-        max-width: 45%;
+        object-fit: cover;
+        width: 45%;
     }
 
     aside div {
+        display: flex;
+        flex-direction: column;
         padding-top: 7%;
         border-radius: 0 20px 20px 0;
 
