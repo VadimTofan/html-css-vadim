@@ -222,46 +222,60 @@ section a {
     min-width: 1.5rem;
     width: 1.5rem;
     padding-right: 3%;
-    margin-top: -0.2rem;
+    margin-top: -0.3rem;
 }
 
 .button1 {
-    padding: 0.6rem 1.5rem;
-    white-space: nowrap;
-    border-radius: 10px;
-    width: 100%;
-    font-size: 20px; 
-    font-weight: 300;
-    color: white;
-    border: none;
-    background-color: teal;
-    transition: opacity 0.2s ease;
-}
-
-.button2 {
-    display: flex;
-    flex-direction: row;
-    white-space: nowrap;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    justify-content: center;
-    padding: 0.6rem 1.5rem;
-    border-radius: 10px;
-    width: 100%;
-    font-size: 20px; 
-    font-weight: 300;
-    color: white;
-    border: none;
-    background-color: teal;
-    transition: opacity 0.2s ease;
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:15px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:6px 25px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
 }
 
 .button1:hover {
-    opacity: 0.6;
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+
+.button1:active {
+	position:relative;
+	top:1px;
+}
+
+.button2 {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:6px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
 }
 
 .button2:hover {
-    opacity: 0.6;
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+
+.button1:active {
+	position:relative;
+	top:1px;
 }
 
 article {
