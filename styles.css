@@ -125,7 +125,8 @@ nav .checkbox {
     align-items: center;
     padding: 1%;
     width: 100%;
-    background-color: #a9a9a9;
+    background: rgb(121,121,125);
+    background: linear-gradient(90deg, rgba(121,121,125,1) 1%, rgba(166,166,166,1) 38%, rgba(121,120,121,1) 53%, rgba(182,181,182,1) 64%, rgba(130,130,130,1) 100%);
     font-size: 2rem;
 }
 
@@ -497,7 +498,8 @@ footer svg {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 2% 10% 2% 10%;
+        padding: 30px 10% 30px 10%;
+        max-height: 100px;
     }
 
     nav ul {
