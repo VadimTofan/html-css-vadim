@@ -24,13 +24,8 @@ a {
     text-decoration: none;
   }
 
-a:visited {
-    color: teal;
-}
-
 a:hover {
     color: white;
-    scale: 1.05;
     text-decoration: underline dotted;
 }
 
@@ -423,25 +418,6 @@ article .date {
     position: relative;
 }
 
-#portfolio {
-    padding-bottom: 50px;
-}
-
-#portfolio div {
-    background-color: #f5f5f5;
-    border-radius: 20px 20px 20px 20px;
-    padding: 14px 21px 14px 21px;
-}
-
-#portfolio h2 {
-    margin-bottom: -0.5%;
-}
-
-article img {
-    max-width: 100%;
-    border-radius: 20px;
-}
-
 .progress-container {
     width: 100%;
 }
@@ -551,20 +527,45 @@ article img {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
     padding: 14px 21px 21px 21px;
 }
 
 .skills {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 30px;
+}
+
+#portfolio {
+    padding-bottom: 50px;
+}
+
+#portfolio div {
+    background-color: #f5f5f5;
+    border-radius: 20px 20px 20px 20px;
+    padding: 14px 21px 14px 21px;
+}
+
+#portfolio h2 {
+    margin-bottom: -0.5%;
+}
+
+article img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#portfolio img {
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 footer {
     display: flex;
     flex-direction: column;
-    padding: 21px 11.3% 50px 11.3%;
+    padding: 10px 11.3% 35px 11.3%;
     background-color: rebeccapurple;
     color: white;
 }
@@ -619,6 +620,11 @@ footer svg {
         position: static;
     }
 
+    nav img:hover{
+        scale: 1.05;
+        transition: scale 0.3s ease-out;  
+    }
+
     nav ul li {
         margin: 0 1em;
     }
@@ -654,8 +660,7 @@ footer svg {
         display: flex;
         flex-direction: row;
         max-width: 100%;
-        padding: 35px 10% 5% 10%;
-        margin-bottom: -5%;
+        padding: 35px 10% 70px 10%;
     }
     
     .aside img {
@@ -710,7 +715,7 @@ footer svg {
     }
 
     .progress-container {
-        width: 18%;
+        width: 17.5%;
     }
 
     .skill {
@@ -723,12 +728,42 @@ footer svg {
         justify-content: space-between;
     }
     
+    article {
+        padding-bottom: 70px;
+    }
+
     article ul p {
        max-width: 75%;
     }
 
-    #portfolio {
-        padding-bottom: 120px;
+    #portfolio{
+        padding-bottom: 170px;
+        scale: 1;
+    }
+
+    #portfolio .port {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+
+    .port a {
+        width: 32.1%;
+        padding-top: 10px;
+    }
+
+    .port img {
+        opacity: 0.7;
+        z-index: 0;
+        position: relative;
+    }
+    .port img:hover {
+        border: 3px solid #332c2b;
+        transform: scale(1.2);
+        opacity: 1;
+        z-index: 1;
     }
 
     footer div {
