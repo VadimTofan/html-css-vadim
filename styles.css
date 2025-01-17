@@ -44,17 +44,17 @@ a, a:visited, a:active {
 }
 
 nav {
-    background: rgb(121,121,125);
-    background: linear-gradient(90deg, rgba(121,121,125,1) 1%, rgba(166,166,166,1) 38%, rgba(121,120,121,1) 53%, rgba(182,181,182,1) 64%, rgba(130,130,130,1) 100%);
     display: flex;
-    padding: 3% 10% 3% 10%;
     justify-content: space-between;
     position: fixed;
     height: 3rem;
+    padding: 21px 10% 21px 10%;
     z-index: 10000;
     margin-top: 0;
     width: 80%;
     font-family: "Montserrat", "Sans-serif";
+    background: rgb(121,121,125);
+    background: linear-gradient(90deg, rgba(121,121,125,1) 1%, rgba(166,166,166,1) 38%, rgba(121,120,121,1) 53%, rgba(182,181,182,1) 64%, rgba(130,130,130,1) 100%);
 }
 
 nav ul li:hover {
@@ -88,7 +88,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -123,8 +123,8 @@ nav .checkbox {
 #menu-toggle:checked ~ ul {
     display: flex;
     align-items: center;
-    padding: 1%;
     width: 100%;
+    position: absolute;
     background: rgb(121,121,125);
     background: linear-gradient(90deg, rgba(121,121,125,1) 1%, rgba(166,166,166,1) 38%, rgba(121,120,121,1) 53%, rgba(182,181,182,1) 64%, rgba(130,130,130,1) 100%);
     font-size: 2rem;
@@ -132,7 +132,8 @@ nav .checkbox {
 
 #menu-toggle:checked ~ ul li {
     text-align: left;
-    padding: 1em 0;
+    padding: 15px;
+    font-family: "Montserrat", "Sans-serif";
 }
 
 #menu-toggle:checked + label .line:nth-child(1) {
@@ -151,7 +152,7 @@ nav .checkbox {
 header {
     display: flex;
     flex-direction: column;
-    padding-top: 12%;
+    padding-top: 90px;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -159,12 +160,12 @@ header {
 
 header h1 {
     margin-bottom: 1rem;
-    font-size: 2.5rem;
+    font-size: 50px;
     max-width: 80%
 }
 
 header p {
-    font-size: 25px;
+    font-size: 18px;
     opacity: 80%;
     margin-top: 0;
     max-width: 80%
@@ -174,14 +175,13 @@ header p {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    padding: 5% 10% 5% 10%;
-    margin-bottom: -5%;
+    padding: 20px 10% 0 10%;
 }
 
 .aside div {
     background-color: #f5f5f5;
     border-radius: 0 0 20px 20px;
-    padding: 2% 3% 2% 3%;
+    padding: 14px 21px 14px 21px;
 }
 
 .aside img {
@@ -195,9 +195,8 @@ header p {
 }
 
 .aside h2 {
-    padding-top: 2rem;
+    padding-top: 20px;
     font-size: 2rem;
-    margin-bottom: -0.5rem;
 }
 
 .aside p {
@@ -209,8 +208,8 @@ section {
     flex-direction: column;
     align-items: flex-start;
     max-width: 100%;
-    padding-top: 3%;
-    padding-bottom: 2%;
+    padding-top: 21px;
+    padding-bottom: 14px;
 }
 
 section a {
@@ -232,11 +231,6 @@ section a {
 }
 
 .button1 {
-	box-shadow: 3px 4px 0px 0px #899599;
-	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
-	background-color:#33bdef;
-	border-radius:15px;
-	border:1px solid #057fd0;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -247,6 +241,11 @@ section a {
     width: 100%;
 	text-decoration:none;
 	text-shadow:0px -1px 0px #5b6178;
+    box-shadow: 3px 4px 0px 0px #899599;
+	border-radius:15px;
+	border:1px solid #057fd0;
+    background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+    background-color:#33bdef;
 }
 
 .button1:hover {
@@ -291,7 +290,7 @@ article {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    padding: 10% 10% 5% 10%;
+    padding: 70px 10% 35px 10%;
     margin-bottom: -5%;
 }
 
@@ -301,7 +300,7 @@ article ul {
     display: flex;
     background-color: #f5f5f5;
     border-radius: 20px;
-    padding: 2% 3% 2% 3%;
+    padding: 14px 21px 5px 21px;
 }
 
 article h2 {
@@ -329,14 +328,13 @@ article .date {
 }
 
 #portfolio {
-    padding-bottom: 10%;
+    padding-bottom: 50px;
 }
 
 #portfolio div {
-    margin-top: -5%;
     background-color: #f5f5f5;
     border-radius: 20px 20px 20px 20px;
-    padding: 2% 3% 2% 3%;
+    padding: 14px 21px 14px 21px;
 }
 
 #portfolio h2 {
@@ -352,7 +350,7 @@ footer {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    padding: 3% 10% 3% 15%;
+    padding: 21px 10% 21px 15%;
     background-color: rebeccapurple;
     color: white;
 }
@@ -478,7 +476,7 @@ footer svg {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 2% 3% 10% 3%;
+    padding: 14px 21px 21px 21px;
 }
 
 
@@ -503,7 +501,7 @@ footer svg {
     }
 
     nav ul {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         position: static;
     }
@@ -543,7 +541,7 @@ footer svg {
         display: flex;
         flex-direction: row;
         max-width: 100%;
-        padding: 5% 10% 5% 10%;
+        padding: 35px 10% 5% 10%;
         margin-bottom: -5%;
     }
     
@@ -556,15 +554,12 @@ footer svg {
     .aside div {
         display: flex;
         flex-direction: column;
-        padding-top: 7%;
+        padding-top: 50px;
         border-radius: 0 20px 20px 0;
-
     }
       
     .aside h2 {
         text-align: center;
-        margin-bottom: 5%;
-        margin-top: -5%;
     }
     
     .aside p {
@@ -577,7 +572,7 @@ footer svg {
         align-items: center;
         gap: 30px;
         padding-top: auto;
-        padding-bottom: 5%;
+        padding-bottom: 35px;
     }
 
     .button1 {
@@ -606,7 +601,7 @@ footer svg {
     }
 
     .skill {
-        padding-bottom: 3%;
+        padding-bottom: 21px;
     }
 
     article ul div {
@@ -616,11 +611,12 @@ footer svg {
     }
     
     article ul p {
-        max-width: 1100px;
+       max-width: 75%;
     }
-
+    
     footer {
-        padding: 3% 10% 3% 10%;
+        margin-top: 100px;
+        padding: 30px 10% 30px 10%;
         max-width: 100%;
     }
 
@@ -640,7 +636,6 @@ footer svg {
         font-weight: 300;
         padding-left: 3%;
         color: white;
-
     }
 
     footer div p:hover {
