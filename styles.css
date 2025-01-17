@@ -327,6 +327,102 @@ article .date {
     opacity: 90%;
 }
 
+.progress-container {
+    width: 100%;
+}
+
+.progress-bar {
+    position: relative;
+    background-color: black;
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-dot {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.progress-html {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,73,238,1) 10%, rgba(209,51,235,0.8911939775910365) 35%, rgba(186,69,237,1) 73%, rgba(0,212,255,1) 100%);
+    height: 6px;
+    width: 25%; 
+    position: relative;
+}
+
+.progress-css {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,73,238,1) 10%, rgba(209,51,235,0.8911939775910365) 35%, rgba(186,69,237,1) 73%, rgba(0,212,255,1) 100%);
+    height: 6px;
+    width: 30%; 
+    position: relative;
+}
+
+.progress-js {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,73,238,1) 10%, rgba(209,51,235,0.8911939775910365) 35%, rgba(186,69,237,1) 73%, rgba(0,212,255,1) 100%);
+    height: 6px;
+    width: 10%; 
+    position: relative;
+}
+
+.progress-python {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,73,238,1) 10%, rgba(209,51,235,0.8911939775910365) 35%, rgba(186,69,237,1) 73%, rgba(0,212,255,1) 100%);
+    height: 6px;
+    width: 20%; 
+    position: relative;
+}
+
+.progress-sql {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,73,238,1) 10%, rgba(209,51,235,0.8911939775910365) 35%, rgba(186,69,237,1) 73%, rgba(0,212,255,1) 100%);
+    height: 6px;
+    width: 20%; 
+    position: relative;
+}
+
+.progress-office {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,73,238,1) 10%, rgba(209,51,235,0.8911939775910365) 35%, rgba(186,69,237,1) 73%, rgba(0,212,255,1) 100%);
+    height: 6px;
+    width: 50; 
+    position: relative;
+}
+
+.progress-english {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,73,238,1) 10%, rgba(209,51,235,0.8911939775910365) 35%, rgba(186,69,237,1) 73%, rgba(0,212,255,1) 100%);
+    height: 6px;
+    width: 80%; 
+    position: relative;
+}
+
+.progress-russian {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,73,238,1) 10%, rgba(209,51,235,0.8911939775910365) 35%, rgba(186,69,237,1) 73%, rgba(0,212,255,1) 100%);
+    height: 6px;
+    width: 100%; 
+    position: relative;
+}
+
+.progress-greek {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,73,238,1) 10%, rgba(209,51,235,0.8911939775910365) 35%, rgba(186,69,237,1) 73%, rgba(0,212,255,1) 100%);
+    height: 6px;
+    width: 100%; 
+    position: relative;
+}
+
 #portfolio {
     padding-bottom: 50px;
 }
@@ -344,26 +440,6 @@ article .date {
 article img {
     max-width: 100%;
     border-radius: 20px;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    padding: 21px 10% 21px 15%;
-    background-color: rebeccapurple;
-    color: white;
-}
-
-footer p:hover {
-    transition: scale 0.3s ease-out;  
-    scale: 1.05;
-}
-
-footer svg {
-    max-height: 1.5rem;
-    padding-right: 5%;
-    margin-bottom: -0.3rem;
 }
 
 .progress-container {
@@ -479,12 +555,49 @@ footer svg {
     padding: 14px 21px 21px 21px;
 }
 
-
 .skills {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 21px 11.3% 21px 11.3%;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 15px;
+}
+
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+footer a:hover {
+    transition: scale 0.3s ease-out;  
+    scale: 1.05;
+}
+
+footer svg {
+    height: 25px;
+    padding-right: 5%;
+    margin-bottom: -0.3rem;
+}
+
 
 
 @media (min-width: 850px) {
@@ -613,36 +726,28 @@ footer svg {
     article ul p {
        max-width: 75%;
     }
-    
-    footer {
-        margin-top: 100px;
-        padding: 30px 10% 30px 10%;
-        max-width: 100%;
+
+    #portfolio {
+        padding-bottom: 120px;
     }
 
     footer div {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
     }
-
-    footer h2 {
-        margin-left: 3.2%;
-    }
-
-    footer div p {
-        min-width: 18%;
+    
+    footer div a {
+        display: flex;
+        align-items: flex-start;
         font-size: 20px; 
-        font-weight: 300;
-        padding-left: 3%;
-        color: white;
+        font-weight: 700;
     }
 
-    footer div p:hover {
+    footer div a:hover {
         background-color: rebeccapurple;
     }
 
-    #svg4 {
-        padding-bottom: 0.2rem;
+    .svg4, svg3 {
+        margin-top: -3px;
     }
 }
