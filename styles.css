@@ -564,7 +564,7 @@ article img {
 footer {
     display: flex;
     flex-direction: column;
-    padding: 21px 11.3% 21px 11.3%;
+    padding: 21px 11.3% 50px 11.3%;
     background-color: rebeccapurple;
     color: white;
 }
