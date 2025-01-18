@@ -4,8 +4,7 @@ body {
     width: 100%;
     margin: 0;
     background-color: #d3d3d3;
-    background-image: url(https://scontent-cph2-1.xx.fbcdn.net/v/t1.15752-9/473165910_1269045734376799_6275181255791983507_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=beUYG3jR0DIQ7kNvgFo_nDy&_nc_zt=23&_nc_ht=scontent-cph2-1.xx&oh=03_Q7cD1gEeY21GPzlljt1l0IKsICTaG0vPMOPN-Mol4wZA8NCf0w&oe=67AEEC78);
-
+   
     & p {
         line-height: 25px;
         font-size: 18px;
@@ -45,16 +44,6 @@ nav {
     background: rgb(121,121,125);
     background: linear-gradient(90deg, rgba(121,121,125,1) 1%, rgba(166,166,166,1) 38%, rgba(121,120,121,1) 53%, rgba(182,181,182,1) 64%, rgba(130,130,130,1) 100%);
 
-    & .checkbox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        border-radius: 30%;
-        width: 3em;
-        height: 3em;
-    }
-
     & img {
         width: 3.5rem;
         height: 3.5rem;
@@ -84,58 +73,68 @@ nav {
             font-weight: bold;
         }
     }
-}
 
-.nav-container {
-    justify-content: space-between;
-    max-width: 90%;
-}
-
-/*----Burger Menu----*/
-.menu {
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-
-    & .line {
-        background-color: white;
-        height: 4px;
-        width: 30px;
-        margin: 5px 0;
-        transition: transform 0.3s ease, opacity 0.3s ease;
+    & .nav-container {
+        justify-content: space-between;
+        max-width: 90%;
     }
-}
 
-#menu-toggle {
-    display: none;
-
-    &:checked ~ ul {
+    /*----Burger Menu----*/
+    & .menu {
         display: flex;
-        align-items: center;
-        width: 100%;
-        position: absolute;
-        background: rgb(121,121,125);
-        background: linear-gradient(90deg, rgba(121,121,125,1) 1%, rgba(166,166,166,1) 38%, rgba(121,120,121,1) 53%, rgba(182,181,182,1) 64%, rgba(130,130,130,1) 100%);
-        font-size: 2rem;
-
-        & li {
-            text-align: left;
-            padding: 15px;
-            font-family: "Montserrat", "Sans-serif";
+        flex-direction: column;
+        z-index: 2;
+    
+        & .line {
+            background-color: white;
+            height: 4px;
+            width: 30px;
+            margin: 5px 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
         }
     }
 
-    &:checked + label .line:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
+    & .checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        border-radius: 30%;
+        width: 3em;
+        height: 3em;
     }
 
-    &:checked + label .line:nth-child(2) {
-        opacity: 0;
-    }
-
-    &:checked + label .line:nth-child(3) {
-        margin-bottom: -10%;
-        transform: translateY(-18px) rotate(-45deg);
+    & #menu-toggle {
+        display: none;
+    
+        &:checked ~ ul {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            background: rgb(121,121,125);
+            background: linear-gradient(90deg, rgba(121,121,125,1) 1%, rgba(166,166,166,1) 38%, rgba(121,120,121,1) 53%, rgba(182,181,182,1) 64%, rgba(130,130,130,1) 100%);
+            font-size: 2rem;
+    
+            & li {
+                text-align: left;
+                padding: 15px;
+                font-family: "Montserrat", "Sans-serif";
+            }
+        }
+    
+        &:checked + label .line:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+    
+        &:checked + label .line:nth-child(2) {
+            opacity: 0;
+        }
+    
+        &:checked + label .line:nth-child(3) {
+            margin-bottom: -10%;
+            transform: translateY(-18px) rotate(-45deg);
+        }
     }
 }
 
@@ -455,6 +454,7 @@ footer {
 }
 
 @media (min-width: 850px) {
+    /*----Navigation Bar Desktop----*/
     nav {
         flex-direction: row;
         justify-content: space-between;
@@ -590,7 +590,7 @@ footer {
         
         & .skills {
             padding-bottom: 15px;
-            
+
             & .progress-container {
                 width: 17.5%;
             }
