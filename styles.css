@@ -1,35 +1,37 @@
+/*----Global Styling----*/
 body {
     font-family: "Roboto", "Sans-serif";
     width: 100%;
     margin: 0;
     background-color: #d3d3d3;
     background-image: url(https://scontent-cph2-1.xx.fbcdn.net/v/t1.15752-9/473165910_1269045734376799_6275181255791983507_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=beUYG3jR0DIQ7kNvgFo_nDy&_nc_zt=23&_nc_ht=scontent-cph2-1.xx&oh=03_Q7cD1gEeY21GPzlljt1l0IKsICTaG0vPMOPN-Mol4wZA8NCf0w&oe=67AEEC78);
+
+    & p {
+        line-height: 25px;
+        font-size: 18px;
+        border-radius: 15px;
+    }
+
+    & p:hover {
+        background-color: #d3d3d3;
+    }
+
+    & a:hover {
+        color: white;
+        text-decoration: underline dotted;
+    }
+    
+    & button {
+        cursor: pointer;
+    }
+
+    & a, a:visited, a:active {
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
-p {
-    line-height: 25px;
-    font-size: 18px;
-    border-radius: 15px;
-}
-
-p:hover {
-    background-color: #d3d3d3;
-}
-
-a:hover {
-    color: white;
-    text-decoration: underline dotted;
-}
-
-button {
-    cursor: pointer;
-  }
-
-a, a:visited, a:active {
-    color: inherit;
-    text-decoration: none;
-}
-
+/*----Navigation Bar----*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -89,6 +91,7 @@ nav {
     max-width: 90%;
 }
 
+/*----Burger Menu----*/
 .menu {
     display: flex;
     flex-direction: column;
@@ -101,7 +104,6 @@ nav {
         margin: 5px 0;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
-
 }
 
 #menu-toggle {
@@ -122,21 +124,22 @@ nav {
             font-family: "Montserrat", "Sans-serif";
         }
     }
+
+    &:checked + label .line:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    &:checked + label .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    &:checked + label .line:nth-child(3) {
+        margin-bottom: -10%;
+        transform: translateY(-18px) rotate(-45deg);
+    }
 }
 
-#menu-toggle:checked + label .line:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-}
-
-#menu-toggle:checked + label .line:nth-child(2) {
-    opacity: 0;
-}
-
-#menu-toggle:checked + label .line:nth-child(3) {
-    margin-bottom: -10%;
-    transform: translateY(-18px) rotate(-45deg);
-}
-
+/*----Header----*/
 header {
     display: flex;
     flex-direction: column;
@@ -158,6 +161,7 @@ header {
     }
 }
 
+/*----Briefly About Me----*/
 .aside {
     display: flex;
     flex-direction: column;
@@ -189,6 +193,7 @@ header {
     }
 }
 
+/*----Buttons in Briefly About Me----*/
 section {
     display: flex;
     flex-direction: column;
@@ -200,78 +205,79 @@ section {
     & a {
         width: 100%;
     }
+
+    & .button1 {
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:17px;
+        font-weight:bold;
+        padding:6px 25px;
+        width: 100%;
+        text-decoration:none;
+        text-shadow:0px -1px 0px #5b6178;
+        box-shadow: 3px 4px 0px 0px #899599;
+        border-radius:15px;
+        border:1px solid #057fd0;
+        background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+        background-color:#33bdef;
+    
+        & svg {
+            height: 1.5rem;
+            padding-right: 3%;
+            margin-bottom: -0.3rem;
+        }
+    
+        &:hover {
+            background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+            background-color:#019ad2;
+        }
+    
+        &:active {
+            position:relative;
+            top:1px;
+        }
+    }
+
+    & .button2 {
+        box-shadow: 3px 4px 0px 0px #899599;
+        background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+        background-color:#ededed;
+        border-radius:15px;
+        border:1px solid #d6bcd6;
+        display:inline-block;
+        cursor:pointer;
+        color:#3a8a9e;
+        font-family:Arial;
+        font-size:17px;
+        width: 100%;
+        padding:6px 25px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #e1e2ed;
+        margin-top: 3%;
+    
+        & svg {
+            min-height: 1.5rem;
+            min-width: 1.5rem;
+            width: 1.5rem;
+            padding-right: 3%;
+            margin-top: -0.3rem;
+        }
+    
+        &:hover {
+            background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+            background-color:#bab1ba;
+        }
+    
+        &:active {
+            position:relative;
+            top:1px;
+        }
+    }
 }
 
-.button1 {
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	font-weight:bold;
-	padding:6px 25px;
-    width: 100%;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #5b6178;
-    box-shadow: 3px 4px 0px 0px #899599;
-	border-radius:15px;
-	border:1px solid #057fd0;
-    background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
-    background-color:#33bdef;
-
-    & svg {
-        height: 1.5rem;
-        padding-right: 3%;
-        margin-bottom: -0.3rem;
-    }
-
-    &:hover {
-        background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
-        background-color:#019ad2;
-    }
-
-    &:active {
-        position:relative;
-        top:1px;
-    }
-}
-
-.button2 {
-	box-shadow: 3px 4px 0px 0px #899599;
-	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-	background-color:#ededed;
-	border-radius:15px;
-	border:1px solid #d6bcd6;
-	display:inline-block;
-	cursor:pointer;
-	color:#3a8a9e;
-	font-family:Arial;
-	font-size:17px;
-    width: 100%;
-	padding:6px 25px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #e1e2ed;
-    margin-top: 3%;
-
-    & svg {
-        min-height: 1.5rem;
-        min-width: 1.5rem;
-        width: 1.5rem;
-        padding-right: 3%;
-        margin-top: -0.3rem;
-    }
-
-    &:hover {
-        background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-        background-color:#bab1ba;
-    }
-
-    &:active {
-        position:relative;
-        top:1px;
-    }
-}
-
+/*----Article Data Containers----*/
 article {
     display: flex;
     flex-direction: column;
@@ -318,77 +324,78 @@ article {
     }
 }
 
-.progress-container {
-    width: 100%;
-}
-
-.progress-bar {
-    position: relative;
-    background-color: black;
-    height: 6px;
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-.progress-dot {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(50%, -50%);
-    width: 12px;
-    height: 12px;
-    background-color: pink;
-    border: 2px solid black;
-    border-radius: 50%;
-}
-
-.progress-html, .progress-css, .progress-js, .progress-python, .progress-sql, .progress-office, 
-.progress-english, .progress-russian, .progress-greek, .progress-teamwork {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,73,238,1) 10%, rgba(209,51,235,0.8911939775910365) 35%, rgba(186,69,237,1) 73%, rgba(0,212,255,1) 100%);
-    height: 6px;
-    position: relative;
-}
-
-.progress-js {
-    width: 10%; 
-}
-
-.progress-python, .progress-sql {
-    width: 20%; 
-}
-
-.progress-html, .progress-css {
-    width: 25%; 
-}
-
-.progress-office {
-    width: 50; 
-}
-
-.progress-english {
-    width: 80%; 
-}
-
-.progress-russian, .progress-greek, .progress-teamwork {
-    width: 100%; 
-}
-
+/*----Skills & Knowledge----*/
 .skill {
     background-color: #f5f5f5;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     padding: 14px 21px 21px 21px;
+
+    & .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 30px;
+
+        & .progress-container {
+            width: 100%;
+        }
+
+        & .progress-bar {
+            position: relative;
+            background-color: black;
+            height: 6px;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        & .progress-dot {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+            width: 12px;
+            height: 12px;
+            background-color: pink;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+
+        & .progress-html, .progress-css, .progress-js, .progress-python, .progress-sql, .progress-office, .progress-english, .progress-russian, .progress-greek, .progress-teamwork {
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,73,238,1) 10%, rgba(209,51,235,0.8911939775910365) 35%, rgba(186,69,237,1) 73%, rgba(0,212,255,1) 100%);
+            height: 6px;
+            position: relative;
+        }
+
+        & .progress-js {
+            width: 10%; 
+        }
+
+        & .progress-python, .progress-sql {
+            width: 20%; 
+        }
+        
+        & .progress-html, .progress-css {
+            width: 25%; 
+        }
+
+        & .progress-office {
+            width: 50; 
+        }
+
+        & .progress-english {
+            width: 80%; 
+        }
+
+        & .progress-russian, .progress-greek, .progress-teamwork {
+            width: 100%; 
+        }
+    }
 }
 
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 30px;
-}
-
+/*----Portfolio----*/
 .portfolio {
     padding-bottom: 50px;
 
@@ -409,6 +416,7 @@ article {
     }
 }
 
+/*----Footer----*/
 footer {
     display: flex;
     flex-direction: column;
@@ -447,10 +455,6 @@ footer {
 }
 
 @media (min-width: 850px) {
-    .menu {
-        display: none;
-    }
-
     nav {
         flex-direction: row;
         justify-content: space-between;
@@ -486,13 +490,18 @@ footer {
         & .checkbox {
             background-color: transparent;
         }
-    }
-    
-    .nav-container {
-        width: 50%;
-        padding-top: 0.5rem;
+
+        & .menu {
+            display: none;
+        }
+
+        & .nav-container {
+            width: 50%;
+            padding-top: 0.5rem;
+        }
     }
 
+    /*----Header Desktop----*/
     header {
         padding-top: 10rem;
 
@@ -501,6 +510,7 @@ footer {
         }
     }
 
+    /*----Briefly About Me Desktop----*/
     .aside {
         display: flex;
         flex-direction: row;
@@ -535,38 +545,23 @@ footer {
             gap: 30px;
             padding-top: auto;
             padding-bottom: 35px;
+
+            & .button1 {
+                margin: 0;
+                min-width: 85%;
+            }
+
+            & .button2 {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                margin: 0;
+                min-width: 85%;
+            }
         }
     }
    
-    .button1 {
-        margin: 0;
-        min-width: 85%;
-    }
-
-    .button2 {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        margin: 0;
-        min-width: 85%;
-    }
-
-    .date {
-        border-width:2px;
-        border-style:solid;
-        border-color:rgb(189, 179, 179);
-        padding: 5px;
-        border-radius: 15px;
-    }
-
-    .progress-container {
-        width: 17.5%;
-    }
-
-    .skill {
-        padding-bottom: 21px;
-    }
-   
+    /*----Article Data Container Desktop----*/
     article {
         padding-bottom: 70px;
 
@@ -579,9 +574,30 @@ footer {
         & ul p {
             max-width: 75%;
         }
-            
+
+        & .date {
+            border-width:2px;
+            border-style:solid;
+            border-color:rgb(189, 179, 179);
+            padding: 5px;
+            border-radius: 15px;
+        }            
     }
 
+    /*----Skills & Knowledge Desktop----*/
+    .skill {
+        padding-bottom: 21px;
+        
+        & .skills {
+            padding-bottom: 15px;
+            
+            & .progress-container {
+                width: 17.5%;
+            }
+        }
+    }
+
+    /*----Portfolio Desktop----*/
     .portfolio {
         margin-bottom: 35px;
         scale: 1;
@@ -612,7 +628,8 @@ footer {
             }
         }
     }
-
+    
+    /*----Footer Desktop----*/
     footer div {
         display: flex;
         flex-direction: row;
@@ -623,9 +640,9 @@ footer {
             font-size: 20px; 
             font-weight: 700;
         }
-    }
 
-    .svg4, .svg3 {
-        margin-top: -3px;
-    }
+        &.svg4, .svg3 {
+            margin-top: -3px;
+        }
+    }   
 }
