@@ -349,7 +349,6 @@ article {
             background-color: black;
             height: 6px;
             border-radius: 3px;
-            overflow: hidden;
         }
 
         & .progress-dot {
@@ -357,10 +356,10 @@ article {
             top: 50%;
             right: 0;
             transform: translate(50%, -50%);
-            width: 12px;
-            height: 12px;
-            background-color: pink;
-            border: 2px solid black;
+            width: 9px;
+            height: 9px;
+            background-color: rgb(230, 159, 171);
+            border: 1px solid black;
             border-radius: 50%;
         }
 
