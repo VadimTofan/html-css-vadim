@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -25,10 +26,10 @@
                     </label>
                     <!-- Link Menu -->
                     <ul class="navigation__links">
-                        <li class="navigation__link"><a href="#about" id="link1">about</a></li>
-                        <li class="navigation__link" ><a href="#skills" id="link2">skills</a></li>
-                        <li class="navigation__link"><a href="#portfolio" id="link3">portfolio</a></li>
-                        <li class="navigation__link"><a href="#contacts" id="link4">contacts</a></li>
+                        <li class="navigation__link js-nav-item"><a href="#about">about</a></li>
+                        <li class="navigation__link js-nav-item" ><a href="#skills">skills</a></li>
+                        <li class="navigation__link js-nav-item"><a href="#portfolio">portfolio</a></li>
+                        <li class="navigation__link js-nav-item"><a href="#contacts">contacts</a></li>
                     </ul>
                 </div>
             </div>
@@ -311,55 +312,55 @@
                 <div class="portfolio__container">
                     <h2>Portfolio</h2>
                     <p>You can see more of my work in my <a
-                            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
+                            href="https://codepen.io/Vadim-Tofan/pen/gbYQGmm"
                             target="_blank"><span class="portfolio__link">Portfolio</span></a>.
                     </p>
                     <!-- Portfolio Photo Grid -->
                     <div class="portfolio__grid">
-                        <a class="portfolio__links" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
+                        <a class="portfolio__links" href="https://codepen.io/Vadim-Tofan/pen/gbYQGmm"
                             target="_blank">
                             <img class="portfolio__img" src="./files/images/portfolio1.webp"
                                 alt="portfolio items number 1">
                         </a>
-                        <a class="portfolio__links" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
+                        <a class="portfolio__links" href="https://codepen.io/Vadim-Tofan/pen/gbYQGmm"
                             target="_blank">
                             <img class="portfolio__img" src="./files/images/portfolio2.webp"
                                 alt="portfolio item number 2">
                         </a>
-                        <a class="portfolio__links" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
+                        <a class="portfolio__links" href="https://codepen.io/Vadim-Tofan/pen/gbYQGmm"
                             target="_blank">
                             <img class="portfolio__img" src="./files/images/portfolio3.webp"
                                 alt="portfolio item number 3">
                         </a>
-                        <a class="portfolio__links" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
+                        <a class="portfolio__links" href="https://codepen.io/Vadim-Tofan/pen/gbYQGmm"
                             target="_blank">
                             <img class="portfolio__img" src="./files/images/portfolio4.webp"
                                 alt="portfolio item number 4">
                         </a>
-                        <a class="portfolio__links" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
+                        <a class="portfolio__links" href="https://codepen.io/Vadim-Tofan/pen/gbYQGmm"
                             target="_blank">
                             <img class="portfolio__img" src="./files/images/portfolio5.webp"
                                 alt="portfolio item number 5">
                         </a>
-                        <a class="portfolio__links" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
+                        <a class="portfolio__links" href="https://codepen.io/Vadim-Tofan/pen/gbYQGmm"
                             target="_blank">
                             <img class="portfolio__img"
                                 src="./files/images/portfolio6.webp"
                                 alt="portfolio item number 6">
                         </a>
-                        <a class="portfolio__links" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
+                        <a class="portfolio__links" href="https://codepen.io/Vadim-Tofan/pen/gbYQGmm"
                             target="_blank">
                             <img class="portfolio__img"
                                 src="./files/images/portfolio7.webp"
                                 alt="portfolio item number 7">
                         </a>
-                        <a class="portfolio__links" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
+                        <a class="portfolio__links" href="https://codepen.io/Vadim-Tofan/pen/gbYQGmm"
                             target="_blank">
                             <img class="portfolio__img"
                                 src="./files/images/portfolio8.webp"
                                 alt="portfolio item number 8">
                         </a>
-                        <a class="portfolio__links" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
+                        <a class="portfolio__links" href="https://codepen.io/Vadim-Tofan/pen/gbYQGmm"
                             target="_blank">
                             <img class="portfolio__img"
                                 src="./files/images/portfolio9.webp"
@@ -436,26 +437,17 @@
             </div>
         </footer>
 
-
-
-
-
-
-
-
-
-
         <!-- JS Resetting Checkbox -->
-        <script>
+        <script script>
             window.addEventListener('resize', () => {
-                if (window.innerWidth >= 761) {
+                if (window.innerWidth >= 1024) {
                     document.getElementById('navigation__toggle').checked = false;
                 }
             });
 
             const menuCheckbox = document.getElementById('navigation__toggle');
-            const menuLinks = document.querySelectorAll('#link1, #link2, #link3, #link4');
-            menuLinks.forEach(link => {
+            const menuLinks = document.getElementsByClassName('js-nav-item');
+            Array.from(menuLinks).forEach(link => {
                 link.addEventListener('click', () => {
                     menuCheckbox.checked = false;
                 });
